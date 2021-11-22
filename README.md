@@ -5,3 +5,6 @@
 Для создания использовались следующие технологии:
 React
 HTML5, CSS
+
+Ссылка на проект:
+https://pictdesign.github.io/mesto-react
