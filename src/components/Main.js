@@ -14,14 +14,18 @@ function Main({onEditProfile, onAddPlace , onEditAvatar, onCardClick}) {
         setUserName(data.name);
         setUserDescription(data.about);
         setUserAvatar(data.avatar);
+    }).catch((err) => {
+      console.log(err);
     });
-  });
+  }, []);
 
   useEffect(() => {
     Api.getInitialCards().then((data) => {
       setCards(data);
+    }).catch((err) => {
+      console.log(err);
     });
-  });
+  }, []);
 
   return (
     <main className="content">
@@ -40,7 +44,7 @@ function Main({onEditProfile, onAddPlace , onEditAvatar, onCardClick}) {
           <ul className="elements__list">
             {cards.map((card) => {
               return (
-                <Card card={card} onCardClick={onCardClick}/>
+                <Card key={card._id} card={card} onCardClick={onCardClick}/>
               );
             })}
           </ul>

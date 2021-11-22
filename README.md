@@ -7,4 +7,4 @@ React
 HTML5, CSS
 
 Ссылка на проект:
-https://pictdesign.github.io/mesto-react
+https://pictdesign.github.io/mesto
