@@ -1,5 +1,4 @@
 import React from "react";
-import { useContext } from "react";
 import PopupWithForm from "./PopupWithForm";
 
 function PopupAvatar({isOpen, onClose, onUpdateAvatar}) {
