@@ -91,6 +91,14 @@ class Api {
       }
     });
   }
+
+  changeLikeCardStatus(cardId, isLiked) {
+    if (isLiked) {
+      return this.deleteLike(cardId);
+    } else {
+      return this.likeCard(cardId);
+    }
+  }
 }
 
 export default new Api ('https://mesto.nomoreparties.co/v1/', 'cohort-28', '0e67701d-63ae-4a9e-9207-db93e93ce8e5');
